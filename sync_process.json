@@ -1,0 +1,14 @@
+{
+   "cards":[
+      {
+         "card": {
+            "type" : "PROCESSING",
+            "processingText": "Syncing first 10 customers and their subscriptions",
+            "request" : {
+               "apiEndPoint":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/sync_result.json"
+            }
+         },
+         "id" : "check2",
+      } 
+   ]
+}

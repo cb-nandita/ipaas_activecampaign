@@ -1,0 +1,23 @@
+{
+   "cards" : [
+      {
+         "card": {
+            "type" : "ACTION",
+            "heading" : "We'll run an Initial sync",
+            "subHeading" : "We'll sync your first 10 customers and their subscriptions to ActiveCampaign. After initial sync, we recommend that you verify the data synced to Active Campaign.",
+            "buttons" :[
+               {
+                  "id":"direct",
+                  "display" : "Run Initial Sync",
+                  "icon" : "ARROW",
+                  "actionType" : "DIRECT_LINK",
+                  "request":{
+                     "apiEndPoint":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/sync_process.json"
+                  }
+               }
+            ]
+         },
+         "id" : "check2",
+      }
+  ]
+}
