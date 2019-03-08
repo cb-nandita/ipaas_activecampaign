@@ -1,6 +1,6 @@
 {
 	"connect": {
-	    "heading":"Integrate ChargeBee with Active Campaign",
+	    "heading":"Integrate Chargebee with Active Campaign",
 	    "content":"ActiveCampaign lets you send personalized messages, newsletters, automated follow-ups to customers. You can also customize messages, segment your contacts to automate emails, manage your pipelines, organize customer data, and more. By connecting Chargebee with ActiveCampaign, you can automatically synchronize your subscription data to ActiveCampaign. This will help you create customized campaigns targeting your customers",
 	    "docUrl":"",
 	    "signupUrl":"",
