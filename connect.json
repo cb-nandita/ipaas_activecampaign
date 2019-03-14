@@ -14,17 +14,17 @@
 	"popUp":{  
 	   "inputFields":[  
 	      {  
-		 "dispName":"Base Url",
+		 "dispName":"Account",
 		 "req":"true",
 		 "type":"TEXT",
-		 "id":"text",
+		 "id":"input_account",
 		 "placeholder":"EG: ABC.ACTIVEHOSTED.COM "
 	      },
 	      {  
-		 "dispName":"API Secret",
+		 "dispName":"API Token",
 		 "req":"true",
 		 "type":"PASSWORD",
-		 "id":"password",
+		 "id":"input_Api-Token",
 		 "placeholder":"eg: 1233asfsdf23434343434"
 	      },
 	      {  
@@ -57,7 +57,10 @@
 			"Elements-Formula-Instance-Id":"375270"
 		},
 	   	"input":{
-			"id":"chargebee"
+			"chargebee_elementId":"14167",
+			"thirdParty_elementId":"15919",
+			"thirdParty_elementKey":"activecampaign"
+			
 		}
 	   }
 	}
