@@ -12,7 +12,7 @@
                 },
             "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/config",
              "input": {
-                "type"="activecampaign"
+                "type":"activecampaign"
              }
          }
       },
