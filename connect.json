@@ -51,8 +51,8 @@
 	   "advance":"true",
 	   "type":"INPUT",
 	   "apiEndPoint":{
-		"apiUrl":"https://staging.cloud-elements.com/elements/api-v2/create-instance",
-		"type":"POST",
+		"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect_resp.json",
+		"type":"GET",
 	   	"headers":{
 			"Elements-Formula-Instance-Id":"375270"
 		},
