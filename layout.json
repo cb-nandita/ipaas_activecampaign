@@ -10,7 +10,10 @@
             "headers": {
                     "Elements-Formula-Instance-Id": "375448"
                 },
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/config?type=activecampaign"
+            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/config",
+             "input": {
+                "type"="activecampaign"
+             }
          }
       },
       {
