@@ -22,12 +22,12 @@
          "apiEndPoint": {
             "type":"GET",
             "headers": {
-                    "Elements-Formula-Instance-Id": "375792"
+                    "Elements-Formula-Instance-Id": "375795"
                 },
             "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/validationStep",
             "input": {
                 "type":"activecampaign",
-                "formulaId":"24874"
+                "formulaId":"24946"
              }
          }
       },
