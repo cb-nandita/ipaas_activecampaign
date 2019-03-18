@@ -27,7 +27,7 @@
             "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/validationStep",
             "input": {
                 "type":"activecampaign",
-                "formulaId":"24946"
+                "formulaId":"24874"
              }
          }
       },
