@@ -106,5 +106,23 @@
          "id" : "check4",
         "isCardDone":"true"
       }
-    ]
+    ],
+   "proceed":{
+      "id":"proceed",
+      "display" : "Proceed",
+      "icon" : "ARROW",
+      "buttonLook":"FILLED",
+      "type" : "DIRECT_LINK",
+      "apiEndPoint":{
+         "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
+         "type":"GET",
+         "headers":{
+            "Authorization":"sfsfsdffadssd",
+            "Elements-Formula-Instance-Id":"sfsfsdafsd"
+         },
+         "input":{
+            "id":"chargebee"
+         }
+      }
+    }
 }
