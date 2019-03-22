@@ -107,12 +107,12 @@
         "isCardDone":"true"
       }
     ],
-   "proceed":{
-      "id":"proceed",
-      "display" : "Proceed",
-      "icon" : "ARROW",
-      "buttonLook":"FILLED",
+    "dismissText":"Dismiss",
+    "save":{
+      "id":"save",
+      "display" : "Save",
       "type" : "DIRECT_LINK",
+      "buttonLook":"FILLED",
       "request":{
          "type":"ON_CLICK_SEND_INPUT",
          "apiEndPoint":{
@@ -128,4 +128,4 @@
          }
       }
     }
-}
+  }

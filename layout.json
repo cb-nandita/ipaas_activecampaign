@@ -7,13 +7,7 @@
          "stepId":"connect",
          "apiEndPoint": {
             "type":"GET",
-            "headers": {
-                    "Elements-Formula-Instance-Id": "375788"
-                },
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/config",
-             "input": {
-                "type":"activecampaign"
-             }
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect.json"
          }
       },
       {
@@ -21,14 +15,7 @@
          "stepId":"step_1",
          "apiEndPoint": {
             "type":"GET",
-            "headers": {
-                    "Elements-Formula-Instance-Id": "375795"
-                },
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/validationStep",
-            "input": {
-                "type":"activecampaign",
-                "formulaId":"24874"
-             }
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/validation_step.json"
          }
       },
       {
@@ -36,37 +23,23 @@
          "stepId":"step_2",
          "apiEndPoint": {
             "type":"GET",
-            "headers": {
-                    "Elements-Formula-Instance-Id": "375951"
-                },
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/mapping",
-             "input": {
-                "type":"activecampaign",
-                "formulaId":"24977"
-             }
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/mapping_step.json"
          },
          "editConfig":{
-              "title":"Manage how Chargebee syncs data with ActiveCampaign",
-              "display" : "Manage sync rules",
-              "apiEndPoint": {
-                "type":"GET",
-                "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/edit_mapping_step.json"
-              }
+            "title":"Manage how Chargebee syncs data with ActiveCampaign",
+            "display" : "Manage sync rules",
+            "apiEndPoint": {
+               "type":"GET",
+               "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/edit_mapping_step.json"
             }
+         }
       },
       {
          "stepName":"Run Initial Sync",
          "stepId":"step_3",
          "apiEndPoint": {
             "type":"GET",
-            "headers": {
-                    "Elements-Formula-Instance-Id": "375989"
-                },
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/stepIntialSync",
-             "input": {
-                "type":"activecampaign",
-                "formulaId":"25012"
-             }
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/initial_sync_step.json"
          }
       },
       {
@@ -74,7 +47,7 @@
          "stepId":"completed",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/final.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/final.json"
          }
       }
    ]
