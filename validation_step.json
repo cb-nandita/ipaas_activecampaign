@@ -13,7 +13,7 @@
             "request" : {
                "type":"DOC_READY_GET_CARD",
                "apiEndPoint":{
-                  "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/validation_step_retry.json",
+                  "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/updated_card.json",
                   "type":"GET"
                }
             }
