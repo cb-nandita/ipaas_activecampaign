@@ -44,7 +44,15 @@
                 "type":"activecampaign",
                 "formulaId":"24977"
              }
-         }
+         },
+         "editConfig":{
+              "title":"Manage how Chargebee syncs data with ActiveCampaign",
+              "display" : "Manage sync rules",
+              "apiEndPoint": {
+                "type":"GET",
+                "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/edit_mapping_step.json"
+              }
+            }
       },
       {
          "stepName":"Run Initial Sync",
