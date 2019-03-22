@@ -13,7 +13,7 @@
             "request" : {
                "type":"DOC_READY_GET_CARD",
                "apiEndPoint":{
-                  "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/updated_card.json.json",
+                  "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/updated_card.json",
                   "type":"GET"
                }
             }
