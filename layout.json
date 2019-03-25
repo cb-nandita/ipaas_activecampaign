@@ -7,7 +7,16 @@
          "stepId":"connect",
          "apiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect.json"
+            "headers": {
+                    "Elements-Formula-Instance-Id": "376556"
+                },
+            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/init",
+            "input": {
+               "type": "activecampaign",
+               "chargebeeElement": "14167",
+               "thirdPartyElement": "15919",
+               "formulaConnect": "376558"
+            }
          }
       },
       {
