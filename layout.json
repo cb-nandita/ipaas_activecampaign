@@ -15,7 +15,8 @@
                "type": "activecampaign",
                "chargebeeElement": "14167",   
                "thirdPartyElement": "15919",
-               "formulaConnect": "376558"
+               "formulaConnect": "376558",
+               "formulaCreate": "376559"
             }
          }
       },
