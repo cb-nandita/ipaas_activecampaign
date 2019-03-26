@@ -16,7 +16,8 @@
                "chargebeeElement": "14167",   
                "thirdPartyElement": "15919",
                "formulaConnect": "376558",
-               "formulaCreate": "376559"
+               "formulaCreate": "376559",
+               "siteDomain":"chargebee-labs.com"
             }
          }
       },
