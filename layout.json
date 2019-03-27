@@ -1,32 +1,31 @@
 {
-   "logo":"/third_party/cn-xero.png",
-   "integDispName":"ActiveCampaign",
-   "subStepList":[
-      {
-         "stepName":"Connect",
-         "stepId":"connect",
-         "apiEndPoint": {
-            "type":"GET",
-            "headers": {
+    "logo": "/third_party/cn-xero.png",
+    "integDispName": "ActiveCampaign",
+    "subStepList": [{
+            "stepName": "Connect",
+            "stepId": "connect",
+            "apiEndPoint": {
+                "type": "GET",
+                "headers": {
                     "Elements-Formula-Instance-Id": "376556"
                 },
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/init",
-            "input": {
-               "type": "activecampaign",
-               "chargebeeElement": "14167",   
-               "thirdPartyElement": "15919",
-               "formulaConnect": "376558",
-               "formulaCreate": "376559",
-               "siteDomain":"chargebee-labs.com",
-               "formulaValidate":"25113",
-               "formulaMapping":"25151"
+                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/init",
+                "input": {
+                    "type": "activecampaign",
+                    "chargebeeElement": "14167",
+                    "thirdPartyElement": "15919",
+                    "formulaConnect": "376558",
+                    "formulaCreate": "376559",
+                    "siteDomain": "chargebee-labs.com",
+                    "formulaValidate": "25113",
+                    "formulaMapping": "25151"
+                }
             }
-         }
-      },
-      {
-         "stepName":"Data Validation",
-         "stepId":"step_1",
-         "apiEndPoint": {
+        },
+        {
+            "stepName": "Data Validation",
+            "stepId": "step_1",
+            "apiEndPoint": {
                 "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/validate",
                 "type": "GET",
                 "headers": {
@@ -37,45 +36,54 @@
                     "siteDomain": "chargebee-labs.com"
                 }
             }
-      },
-      {
-         "stepName":"Configure Sync Preferences ",
-         "stepId":"step_2",
-         "apiEndPoint": {
-            "type":"GET",
-            "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/mapping"
-         },
-         "editConfig":{
-            "title":"Manage how Chargebee syncs data with ActiveCampaign",
-            "display" : "Manage sync rules",
+        },
+        {
+            "stepName": "Configure Sync Preferences ",
+            "stepId": "step_2",
             "apiEndPoint": {
-               "type":"GET",
-               "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/edit_mapping_step.json",
-               "headers": {
+                "type": "GET",
+                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                "headers": {
                     "Elements-Formula-Instance-Id": "376928"
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
+                    "siteDomain": "chargebee-labs.com",
+                    "op": "new"
+                }
+            },
+            "editConfig": {
+                "title": "Manage how Chargebee syncs data with ActiveCampaign",
+                "display": "Manage sync rules",
+                "apiEndPoint": {
+                    "type": "GET",
+                    "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                    "headers": {
+                        "Elements-Formula-Instance-Id": "376928"
+                    },
+                    "input": {
+                        "type": "activecampaign",
+                        "siteDomain": "chargebee-labs.com",
+                        "op": "edit"
+                    }
                 }
             }
-         }
-      },
-      {
-         "stepName":"Run Initial Sync",
-         "stepId":"step_3",
-         "apiEndPoint": {
-            "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/initial_sync_step.json"
-         }
-      },
-      {
-         "stepName":"Final step",
-         "stepId":"completed",
-         "apiEndPoint": {
-            "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/final.json"
-         }
-      }
-   ]
+        },
+        {
+            "stepName": "Run Initial Sync",
+            "stepId": "step_3",
+            "apiEndPoint": {
+                "type": "GET",
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/initial_sync_step.json"
+            }
+        },
+        {
+            "stepName": "Final step",
+            "stepId": "completed",
+            "apiEndPoint": {
+                "type": "GET",
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/final.json"
+            }
+        }
+    ]
 }
