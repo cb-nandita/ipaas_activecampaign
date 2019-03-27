@@ -26,9 +26,16 @@
          "stepName":"Data Validation",
          "stepId":"step_1",
          "apiEndPoint": {
-            "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/validation_step.json"
-         }
+                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/validate",
+                "type": "GET",
+                "headers": {
+                    "Elements-Formula-Instance-Id": "376850"
+                },
+                "input": {
+                    "type": "activecampaign",
+                    "siteDomain": "chargebee-labs.com"
+                }
+            }
       },
       {
          "stepName":"Configure Sync Preferences ",
