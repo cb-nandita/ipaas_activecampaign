@@ -19,7 +19,10 @@
                     "siteDomain": "chargebee-labs.com",
                     "formulaValidate": "25113",
                     "formulaMapping": "25151",
-                    "formulaMappingProceed":"25155"
+                    "formulaMappingProceed":"25155",
+                    "formulaSyncSetup":"25181",
+                    "formulaSync':"25183"
+                    
                 }
             }
         },
@@ -78,6 +81,10 @@
                 "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/setup",
                 "headers": {
                         "Elements-Formula-Instance-Id": "377074"
+                    },
+                "input": {
+                        "type": "activecampaign",
+                        "siteDomain": "chargebee-labs.com"
                     }
             }
         },
