@@ -75,7 +75,10 @@
             "stepId": "step_3",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/initial_sync_step.json"
+                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/setup",
+                "headers": {
+                        "Elements-Formula-Instance-Id": "377074"
+                    }
             }
         },
         {
