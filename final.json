@@ -32,7 +32,28 @@
 			    "type" : "ACTION",
 			    "heading" : "You've ignored errors found during data validation.",
 			    "icon" : "WARNING",
-			}
+			},
+			"retry":{
+      "id":"retry",
+      "display" : "Retry initial sync",
+      "icon" : "ARROW",
+      "buttonLook":"FILLED",
+      "type" : "DIRECT_LINK",
+      "request":{
+         "type":"ON_CLICK_DEFAULT_ACTION",
+         "apiEndPoint":{
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect_resp.json",
+            "type":"GET",
+            "headers":{
+               "Authorization":"sfsfsdffadssd",
+               "Elements-Formula-Instance-Id":"sfsfsdafsd"
+            },
+            "input":{
+               "id":"chargebee"
+            }
+         }
+      }
+    }
 		}
 	]
 }
