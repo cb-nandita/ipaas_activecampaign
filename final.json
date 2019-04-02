@@ -1,59 +1,56 @@
 {
-	"icon":"/third_party/cn-xero.png",
-	"unlink":{
-		"id":"unlink",
-                "display" : "Unlink Integration",
-		"buttonLook":"MUTTED",
-                "type" : "POP_UP",
-                "popUp":{
-                     "type":"SIMPLE",
-                     "title":"Do you really want to unlink the integration?",
-                     "submitButton":"Unlink",
-                     "cancelButton":"Dismiss",
-                     "description":"This will remove all the configuration details such as login authentication, configurations mapping etc. If you want to sync again, you will have to start the sync process from the beginning.",
-                     "apiEndPoint":{
-                        "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect_resp.json",
-                        "type":"GET"
-                     }
-	  	}
-	},
-	"syncErrors":[
-		{
-			"card": {
-			    "type" : "ACTION",
-			    "heading" : "You've ignored errors found during data validation.",
-			    "icon" : "WARNING",
-			}
-		}
-	],
-	"overview":[
-		{
-			"card": {
-			    "type" : "ACTION",
-			    "heading" : "You've ignored errors found during data validation.",
-			    "icon" : "WARNING",
-			},
-			"retry":{
-      "id":"retry",
-      "display" : "Retry initial sync",
-      "icon" : "ARROW",
-      "buttonLook":"FILLED",
-      "type" : "DIRECT_LINK",
-      "request":{
-         "type":"ON_CLICK_DEFAULT_ACTION",
-         "apiEndPoint":{
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect_resp.json",
-            "type":"GET",
-            "headers":{
-               "Authorization":"sfsfsdffadssd",
-               "Elements-Formula-Instance-Id":"sfsfsdafsd"
-            },
-            "input":{
-               "id":"chargebee"
+    "icon": "/third_party/cn-xero.png",
+    "unlink": {
+        "id": "unlink",
+        "display": "Unlink Integration",
+        "buttonLook": "MUTTED",
+        "type": "POP_UP",
+        "popUp": {
+            "type": "SIMPLE",
+            "title": "Do you really want to unlink the integration?",
+            "submitButton": "Unlink",
+            "cancelButton": "Dismiss",
+            "description": "This will remove all the configuration details such as login authentication, configurations mapping etc. If you want to sync again, you will have to start the sync process from the beginning.",
+            "apiEndPoint": {
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect_resp.json",
+                "type": "GET"
             }
-         }
-      }
-    }
-		}
-	]
+        }
+    },
+    "syncErrors": [{
+        "card": {
+            "type": "ACTION",
+            "heading": "You've ignored errors found during data validation.",
+            "icon": "WARNING",
+        }
+    }],
+    "overview": [{
+        "card": {
+            "type": "ACTION",
+            "heading": "You've ignored errors found during data validation.",
+            "icon": "WARNING",
+        }
+    }]
+    ,
+        "retry": {
+            "id": "retry",
+            "display": "Retry initial sync",
+            "icon": "ARROW",
+            "buttonLook": "FILLED",
+            "type": "DIRECT_LINK",
+            "request": {
+                "type": "ON_CLICK_DEFAULT_ACTION",
+                "apiEndPoint": {
+                    "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/connect_resp.json",
+                    "type": "GET",
+                    "headers": {
+                        "Authorization": "sfsfsdffadssd",
+                        "Elements-Formula-Instance-Id": "sfsfsdafsd"
+                    },
+                    "input": {
+                        "id": "chargebee"
+                    }
+                }
+            }
+        }
 }
