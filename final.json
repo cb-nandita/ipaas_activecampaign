@@ -20,7 +20,8 @@
     "syncErrors": [{
         "card": {
             "type": "ACTION",
-
+"heading": "",
+            "icon": "WARNING"
         }
     }],
     "overview": [{
