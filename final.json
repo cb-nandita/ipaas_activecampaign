@@ -17,13 +17,6 @@
             }
         }
     },
-    "syncErrors": [{
-        "card": {
-            "type": "ACTION",
-            "heading": "You've ignored errors found during data validation.",
-            "icon": "WARNING",
-        }
-    }],
     "overview": [{
         "card": {
             "type": "PROCESSING",
