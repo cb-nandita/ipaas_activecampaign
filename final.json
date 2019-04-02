@@ -17,7 +17,12 @@
             }
         }
     },
-    "syncErrors": [],
+    "syncErrors": [{
+        "card": {
+            "type": "ACTION",
+
+        }
+    }],
     "overview": [{
         "card": {
             "type": "PROCESSING",
