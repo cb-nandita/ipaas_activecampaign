@@ -17,10 +17,10 @@
             }
         }
     },
-    "syncErrors": [{
+     "syncErrors": [{
         "card": {
             "type": "ACTION",
-"heading": "",
+            "heading": "You've ignored errors found during data validation.",
             "icon": "WARNING"
         }
     }],
