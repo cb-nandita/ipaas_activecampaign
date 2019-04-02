@@ -17,6 +17,7 @@
             }
         }
     },
+    "syncErrors": [],
     "overview": [{
         "card": {
             "type": "PROCESSING",
