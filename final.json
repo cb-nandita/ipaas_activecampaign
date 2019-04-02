@@ -21,7 +21,7 @@
     "syncErrors": [{
         "card": {
             "type": "ACTION",
-            "heading": "You've ignored errors found during data validation.",
+            "heading": "  ",
             "icon": "WARNING",
         }
     }],
