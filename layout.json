@@ -92,7 +92,14 @@
             "stepId": "completed",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_activecampaign/master/final.json"
+                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/sync/run",
+                "headers": {
+                    "Elements-Formula-Instance-Id": "377696"
+                },
+                "input": {
+                    "type": "activecampaign",
+                    "siteDomain": "chargebee-labs.com"
+                }
             }
         }
     ]
