@@ -21,15 +21,24 @@
     "syncErrors": [{
         "card": {
             "type": "ACTION",
-            "heading": "  ",
+            "heading": "48 errors found  ",
+            "listContent":[
+               "Customer #344432 - Customer email id is unavailable",
+               "Customer #344433 - Customer email id is unavailable",
+               "Customer #344435 - Customer doesn't have any subscriptions"
+            ],
             "icon": "WARNING",
         }
     }],
     "overview": [{
         "card": {
-            "type": "PROCESSING",
-            "heading": " ",
-            "icon": "WARNING",
+            "type": "ACTION",
+            "heading": "Last sync done 0 Minutes ago ",
+            "subHeading":"200 customer and subscription synced with Active Campaign",
+            "listContent":[
+                "Customer id CB-1234 is synced as AC-123 in Active Campaign",
+             ],
+            "icon": "SUCCESS",
         }
     }]
 }
