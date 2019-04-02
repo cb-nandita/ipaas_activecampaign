@@ -26,7 +26,7 @@
     }],
     "overview": [{
         "card": {
-            "type": "ACTION",
+            "type": "PROCESSING",
             "heading": "You've ignored errors found during data validation.",
             "icon": "WARNING",
         }
