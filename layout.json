@@ -12,7 +12,7 @@
                 "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/init",
                 "input": {
                     "type": "activecampaign",
-                    "chargebeeElement": "14167",
+                    "chargebeeElement": "155245",
                     "thirdPartyElement": "15919",
                     "formulaConnect": "376558",
                     "formulaCreate": "376559",
