@@ -1,7 +1,7 @@
 {
     "contents":[
     	"ActiveCampaign lets you send personalized messages, newsletters, automated follow-ups to customers. You can also customize messages, segment your contacts to automate emails, manage your pipelines, organize customer data, and more.",
-    	"By connecting Chargebee with ActiveCampaign, you can automatically synchronize your subscription data to ActiveCampaign. This will help you create customized campaigns targeting your customers"
+    	"By connecting Chargebee with ActiveCampaign, you can automatically synchronize your subscription data to ActiveCampaign. This will help you create customized campaigns targeting your customers. <a href=\"\" target=\"blank\">Learn more</a>""
     ],
     "docUrl":"",
     "signupUrl":"",
@@ -32,13 +32,6 @@
 		 "type":"CHECKBOX",
 		 "id":"checkbox1",
 		 "desc":"I'm aware that Active Campaign may store your customer and subscription data. Please refer to ActiveCampaign's Terms of Service, Consent Policy, and Privacy Policy."
-	      },
-	      {  
-		 "dispName":"API Secret",
-		 "req":"true",
-		 "type":"CHECKBOX",
-		 "id":"checkbox2",
-		 "desc":"I agree to the Chargebee's terms and conditions"
 	      }
 	   ],
 	   "message":{
