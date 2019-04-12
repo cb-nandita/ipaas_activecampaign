@@ -16,8 +16,7 @@
 			      }
             ]
          },
-         "id" : "check2",
-        "isCardDone":"true"
+         "id" : "check1"
       },
 		{
          "card": {
@@ -37,8 +36,7 @@
 		      	}
             ]
          },
-         "id" : "check2",
-        "isCardDone":"true"
+         "id" : "check2"
       },
 		{
          "card": {
@@ -53,8 +51,7 @@
 			      }
             ]
          },
-         "id" : "check3",
-        "isCardDone":"true"
+         "id" : "check3"
       },
 		{
          "card": {
@@ -68,7 +65,6 @@
 			      },
                {  
 			         "dispName":"Subscription fields",
-			         "req":"true",
 			         "type":"ACTIONDROPDOWN",
 			         "id":"dropdown3",
 			         "allowedValues":{
@@ -77,12 +73,11 @@
 			            "option3":"Checkbox label",
 			            "option4":"Checkbox label",
 			            "option5":"Checkbox label",
-			            "option6":"Checkbox label",
+			            "option6":"Checkbox label"
 			         }
 			      },               
                {  
 			         "dispName":"Cubscription fields",
-			         "req":"true",
 			         "type":"ACTIONDROPDOWN",
 			         "id":"dropdown4",
 			         "allowedValues":{
@@ -93,7 +88,6 @@
 			      },               
                {  
 			         "dispName":"Custom field",
-			         "req":"true",
 			         "type":"ACTIONDROPDOWN",
 			         "id":"dropdown5",
 			         "allowedValues":{
@@ -103,8 +97,7 @@
 			      }               
             ]
          },
-         "id" : "check4",
-        "isCardDone":"true"
+         "id" : "check4"
       }
     ],
    "proceed":{
