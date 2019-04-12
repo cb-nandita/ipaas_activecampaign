@@ -5,10 +5,10 @@
             "type" : "ACTION",
             "heading" : "4 of 10 records synced successfully",
             "listContent":[
-               "Customer id CB-1234 is synced as AC-123 in Active Campaign",
-               "Customer id CB-1234 is synced as AC-123 in Active Campaign",
-               "Customer id CB-1234 is synced as AC-123 in Active Campaign",
-               "Customer id CB-1234 is synced as AC-123 in Active Campaign"
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign",
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign",
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign",
+               "Customer id <a href=\"\" target=\"blank\">CB-1234</a> is synced as <a href=\"\" target=\"blank\">AC-123</a> in Active Campaign"
             ],
             "icon" : "SUCCESS"         
          },
@@ -21,9 +21,9 @@
             "heading" : "6 of 10 records could not be synced",
             "subHeading" : "You could fix these errors and retry sync. Or you could go ahead and sync all records. We recommend that you fix these errors and retry sync.",
             "listContent":[
-               "Customer #344432 - Customer email id is unavailable",
-               "Customer #344433 - Customer email id is unavailable",
-               "Customer #344435 - Customer doesn't have any subscriptions"
+               "<a href=\"\" target=\"blank\">Customer #344432</a> - Customer email id is unavailable",
+               "<a href=\"\" target=\"blank\">Customer #344433</a> - Customer email id is unavailable",
+               "<a href=\"\" target=\"blank\">Customer #344435</a> - Customer doesn't have any subscriptions"
             ],
             "icon" : "ERROR"         
          },
