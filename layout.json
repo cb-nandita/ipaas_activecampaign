@@ -36,7 +36,8 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
+                    "siteDomain": "chargebee-labs.com",
+                    "retry":"false"
                 }
             }
         },
