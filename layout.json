@@ -89,6 +89,21 @@
            }
        },
        {
+           "stepName": "Retry Initial Sync",
+           "stepId": "step_4",
+           "apiEndPoint": {
+               "type": "GET",
+               "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/sync-process",
+               "headers": {
+                   "Elements-Formula-Instance-Id": "379392"
+               },
+               "input": {
+                   "type": "activecampaign",
+                   "siteDomain": "chargebee-labs.com"
+               }
+           }
+       },            
+       {
            "stepName": "Final step",
            "stepId": "completed",
            "apiEndPoint": {
