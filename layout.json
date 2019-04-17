@@ -1,107 +1,107 @@
 {
-    "logo": "/third_party/cn-activecampaign.png",
-    "integDispName": "ActiveCampaign",
-    "subStepList": [{
-            "stepName": "Connect",
-            "stepId": "connect",
-            "apiEndPoint": {
-                "type": "GET",
-                "headers": {
-                    "Elements-Formula-Instance-Id": "376556"
-                },
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/init",
-                "input": {
-                    "type": "activecampaign",
-                    "chargebeeElement": "14167",
-                    "thirdPartyElement": "15919",
-                    "formulaConnect": "376558",
-                    "formulaCreate": "376559",
-                    "siteDomain": "chargebee-labs.com",
-                    "formulaValidate": "25113",
-                    "formulaMapping": "25151",
-                    "formulaMappingProceed": "25155",
-                    "formulaSyncSetup": "25181",
-                    "formulaSync": "25197"
-                }
-            }
-        },
-        {
-            "stepName": "Data Validation",
-            "stepId": "step_1",
-            "apiEndPoint": {
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/validate",
-                "type": "GET",
-                "headers": {
-                    "Elements-Formula-Instance-Id": "376850"
-                },
-                "input": {
-                    "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com",
-                    "retry":"false"
-                }
-            }
-        },
-        {
-            "stepName": "Configure Sync Preferences ",
-            "stepId": "step_2",
-            "apiEndPoint": {
-                "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
-                "headers": {
-                    "Elements-Formula-Instance-Id": "376928"
-                },
-                "input": {
-                    "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com",
-                    "op": "new"
-                }
-            },
-            "editConfig": {
-                "title": "Manage how Chargebee syncs data with ActiveCampaign",
-                "display": "Manage sync rules",
-                "apiEndPoint": {
-                    "type": "GET",
-                    "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
-                    "headers": {
-                        "Elements-Formula-Instance-Id": "376928"
-                    },
-                    "input": {
-                        "type": "activecampaign",
-                        "siteDomain": "chargebee-labs.com",
-                        "op": "edit"
-                    }
-                }
-            }
-        },
-        {
-            "stepName": "Run Initial Sync",
-            "stepId": "step_3",
-            "apiEndPoint": {
-                "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/setup",
-                "headers": {
-                    "Elements-Formula-Instance-Id": "377074"
-                },
-                "input": {
-                    "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
-                }
-            }
-        },
-        {
-            "stepName": "Final step",
-            "stepId": "completed",
-            "apiEndPoint": {
-                "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/sync/run",
-                "headers": {
-                    "Elements-Formula-Instance-Id": "377696"
-                },
-                "input": {
-                    "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
-                }
-            }
-        }
-    ]
+   "logo": "/third_party/cn-activecampaign.png",
+   "integDispName": "ActiveCampaign",
+   "subStepList": [{
+           "stepName": "Connect",
+           "stepId": "connect",
+           "apiEndPoint": {
+               "type": "GET",
+               "headers": {
+                   "Elements-Formula-Instance-Id": "379387"
+               },
+               "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/connect-json",
+               "input": {
+                   "type": "activecampaign",
+                   "chargebeeElement": "14167",
+                   "thirdPartyElement": "15919",
+                   "formulaConnect": "376558",
+                   "formulaCreate": "376559",
+                   "siteDomain": "chargebee-labs.com",
+                   "formulaValidate": "25113",
+                   "formulaMapping": "25151",
+                   "formulaMappingProceed": "25155",
+                   "formulaSyncSetup": "25181",
+                   "formulaSync": "25197"
+               }
+           }
+       },
+       {
+           "stepName": "Data Validation",
+           "stepId": "step_1",
+           "apiEndPoint": {
+               "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/validation",
+               "type": "GET",
+               "headers": {
+                   "Elements-Formula-Instance-Id": "379388"
+               },
+               "input": {
+                   "type": "activecampaign",
+                   "siteDomain": "chargebee-labs.com",
+                   "retry":"false"
+               }
+           }
+       },
+       {
+           "stepName": "Configure Sync Preferences ",
+           "stepId": "step_2",
+           "apiEndPoint": {
+               "type": "GET",
+               "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+               "headers": {
+                   "Elements-Formula-Instance-Id": "379389"
+               },
+               "input": {
+                   "type": "activecampaign",
+                   "siteDomain": "chargebee-labs.com",
+                   "op": "new"
+               }
+           },
+           "editConfig": {
+               "title": "Manage how Chargebee syncs data with ActiveCampaign",
+               "display": "Manage sync rules",
+               "apiEndPoint": {
+                   "type": "GET",
+                   "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                   "headers": {
+                       "Elements-Formula-Instance-Id": "379389"
+                   },
+                   "input": {
+                       "type": "activecampaign",
+                       "siteDomain": "chargebee-labs.com",
+                       "op": "edit"
+                   }
+               }
+           }
+       },
+       {
+           "stepName": "Run Initial Sync",
+           "stepId": "step_3",
+           "apiEndPoint": {
+               "type": "GET",
+               "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/setup",
+               "headers": {
+                   "Elements-Formula-Instance-Id": "379390"
+               },
+               "input": {
+                   "type": "activecampaign",
+                   "siteDomain": "chargebee-labs.com"
+               }
+           }
+       },
+       {
+           "stepName": "Final step",
+           "stepId": "completed",
+           "apiEndPoint": {
+               "type": "GET",
+               "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/run",
+               "headers": {
+                   "Elements-Formula-Instance-Id": "379391"
+               },
+               "input": {
+                   "type": "activecampaign",
+                   "siteDomain": "chargebee-labs.com"
+               }
+           }
+       }
+   ]
 }
