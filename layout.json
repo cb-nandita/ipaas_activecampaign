@@ -78,13 +78,14 @@
             "stepId": "step_3",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/setup",
+                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/run",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "377074"
+                    "Elements-Formula-Instance-Id": "377075"
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
+                    "siteDomain": "chargebee-labs.com",
+                    "action": "default"
                 }
             }
         },
