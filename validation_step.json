@@ -2,6 +2,7 @@
    "cards" : [
       {
          "id" : "check2",
+         "showRetry":"false",
          "card": {
             "type" : "PROCESSING",
             "processingText": "Validating your Chargebee data",
