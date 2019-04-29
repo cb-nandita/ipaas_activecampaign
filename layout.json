@@ -39,7 +39,11 @@
                     "siteDomain": "chargebee-labs.com",
                     "retry":"false"
                 }
-            }
+            },
+          "backStepApiEndPoint": {
+            "type":"GET",
+            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+          }
         },
         {
             "stepName": "Configure Sync Preferences ",
@@ -102,7 +106,11 @@
                     "type": "activecampaign",
                     "siteDomain": "chargebee-labs.com"
                 }
-            }
+            },
+             "fullSyncApiEndPoint": {
+                "type":"GET",
+                "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+             }
         }
     ]
 }
