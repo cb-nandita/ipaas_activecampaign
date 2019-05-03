@@ -109,7 +109,7 @@
             },
              "fullSyncApiEndPoint": {
                 "type":"GET",
-                "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/sync/run"
+                "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/sync/run",
                 "headers": {
                     "Elements-Formula-Instance-Id": "377696"
                 },
