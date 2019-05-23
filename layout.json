@@ -106,7 +106,8 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
+                    "siteDomain": "chargebee-labs.com",
+                    "syncNow": "syncNow"
                 }
             },
              "fullSyncApiEndPoint": {
