@@ -98,17 +98,7 @@
         {
             "stepName": "Final step",
             "stepId": "completed",
-            "apiEndPoint": {
-                "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/processing-card",
-                "headers": {
-                    "Elements-Formula-Instance-Id": "383955"
-                },
-                "input": {
-                    "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
-                    
-                }
+            
             },
              "fullSyncApiEndPoint": {
                 "type":"GET",
