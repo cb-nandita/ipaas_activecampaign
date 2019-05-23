@@ -98,8 +98,7 @@
         {
             "stepName": "Final step",
             "stepId": "completed",
-            
-            },
+           
              "fullSyncApiEndPoint": {
                 "type":"GET",
                 "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/sync/run",
