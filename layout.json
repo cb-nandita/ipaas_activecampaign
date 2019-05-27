@@ -102,7 +102,7 @@
                 "type": "GET",
                 "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/processing-card",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "383955"
+                    "Elements-Formula-Instance-Id": "386930"
                 },
                 "input": {
                     "type": "activecampaign",
