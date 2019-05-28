@@ -91,7 +91,8 @@
                 "input": {
                     "type": "activecampaign",
                     "siteDomain": "chargebee-labs.com",
-                    "action": "default"
+                    "action": "default",
+                    "initialSync": "true"
                 }
             }
         },
