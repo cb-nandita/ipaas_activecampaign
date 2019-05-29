@@ -1,147 +1,160 @@
 {
-	"icon":"/third_party/cn-xero.png",
-	"unlink":{
-		"id":"unlink",
-                "display" : "Unlink Integration",
-		"buttonLook":"MUTTED",
-                "type" : "POP_UP",
-                "popUp":{
-                     "type":"SIMPLE",
-                     "title":"Do you really want to unlink the integration?",
-                     "submitButton":"Unlink",
-                     "cancelButton":"Dismiss",
-                     "description":"This will remove all the configuration details such as login authentication, configurations mapping etc. If you want to sync again, you will have to start the sync process from the beginning.",
-                     "apiEndPoint":{
-                        "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json",
-                        "type":"GET"
-                     }
-	  	}
-	},
-	"syncErrors":[
-		{
-		 	"card": {
-			"id":"check3",
-		    	"type" : "ACTION3",
-		    	"heading" : "10 error(s) found",
-		    	"listActionContent":[
-			    {
-				    "content":"Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred",
-				    "button" :{
-					  "id":"ignore1",
-					  "display" : "IGNORE",
-					  "type" : "POP_UP",
-					  "popUp":{
-					     "type":"SIMPLE",
-					     "title":"Are you sure you want to ignore?",
-					     "submitButton":"Yes, go ahead",
-					     "cancelButton":"Dismiss",
-					     "usecase":"DANGER",
-					     "description":"Once this error is ignored, this record will not be synced to ActiveCampaign.",
-					     "apiEndPoint":{
-						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
-						"type":"GET"
-					     }
-					  }
-				       }
-			    },
-			    {
-				    "content":"Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred",
-				    "button" :{
-					  "id":"ignore2",
-					  "display" : "IGNORE",
-					  "type" : "POP_UP",
-					  "popUp":{
-					     "type":"SIMPLE",
-					     "title":"Are you sure you want to ignore?",
-					     "submitButton":"Yes, go ahead",
-					     "cancelButton":"Dismiss",
-					     "usecase":"DANGER",
-					     "description":"Once this error is ignored, this record will not be synced to ActiveCampaign.",
-					     "apiEndPoint":{
-						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
-						"type":"GET"
-					     }
-					  }
-				       }
-			    }
-		    ],
-		    "buttons":[
-		       {
-			  "id":"download",
-			  "display" : "Download CSV",
-			  "icon" : "CLOUD_DOWNLOAD",
-			  "type" : "DIRECT_LINK"
-		       },
-		       {
-			  "id":"confirmation",
-			  "display" : "IGNORE ALL",
-			  "buttonLook":"EMPTY",
-			  "icon" : "CLOSE",
-			  "type" : "POP_UP",
-			  "popUp":{
-			     "type":"SIMPLE",
-			     "title":"Are you sure you want to ignore the errors?",
-			     "submitButton":"Yes, go ahead",
-			     "cancelButton":"Dismiss",
-			     "usecase":"DANGER",
-			     "description":"Subscription data of this customer will not be synced with ActiveCampaign",
-			     "apiEndPoint":{
-				"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/final_updated_card.json",
-				"type":"GET"
-			     }
-			  }
-		       }
-		    ]
-		 },
-		 "id" : "sync_errors",
-		 "isCardDone":"true"
-	      }
-	],
-	"overview":[
-		{
-		 "card": {
-		    "id":"check2",
-		    "type" : "ACTION2",
-		    "heading" : "Last sync done 20 minutes ago",
-		    "subHeading":"200 customers and subscriptions synced with ActiveCampaign ",
-		    "buttons" :[
-		       {
-			  "id":"sync",
-			  "display" : "Sync now",
-			  "icon" : "AUTO_RENEW",
-			  "type" : "DIRECT_LINK",
-		          "buttonLook":"EMPTY",
-			   "request":{
-				     "type":"ON_CLICK_GET_CARD",
-				     "apiEndPoint":{
-					"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/sync_process.json",
-					"type":"GET"
-				     }
-				  }
-		       }
-		    ],
-		    "message":{
-			    "message":"53 customers and subscriptions could not be synced to ActiveCampaign.",
-			    "messageLook":"WARN",
-			    "icon":"WARNING",
-			    "button":{
-				"id":"errors",
-				  "display" : "See all errors",
-				  "icon" : "ARROW",
-				  "type" : "DIRECT_LINK",
-				   "request":{
-					     "type":"ON_CLICK_GET_CARD",
-					     "apiEndPoint":{
-						"apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/sync_process.json",
-						"type":"GET"
-					     }
-					  }
-			    }
-		    }
-		 },
-		 "id" : "overview",
-		 "isCardDone":"true"
-			
-	      }
-	]
+  "icon": "/third_party/cn-xero.png",
+  "overview": [
+    {
+      "card": {
+        "buttons": [
+          {
+            "buttonLook": "EMPTY",
+            "display": "Sync now",
+            "icon": "AUTO_RENEW",
+            "id": "sync",
+            "request": {
+              "apiEndPoint": {
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/syncpage.json",
+                "headers": {
+                  "Elements-Formula-Instance-Id": "377696"
+                },
+                "input": {
+                  "apiKey": "test_FdeKa4XuFlZ6ZxikZjIrNLu1VNOkocOq",
+                  "siteDomain": "chargebee-labs.com",
+                  "siteName": "ipaas-test",
+                  "syncNow": "syncNow",
+                  "type": "activecampaign"
+                },
+                "type": "GET"
+              },
+              "type": "ON_CLICK_GET_CARD"
+            },
+            "type": "DIRECT_LINK"
+          }
+        ],
+        "heading": "Last sync done 0 Minutes ago ",
+        "id": "check2",
+        "message": {
+          "button": {
+            "display": "See all errors",
+            "icon": "ARROW",
+            "id": "errors",
+            "type": "TAB_CHANGE"
+          },
+          "icon": "WARNING",
+          "message": "2 customers and subscriptions could not be synced to ActiveCampaign",
+          "messageLook": "WARN"
+        },
+        "subHeading": "5  customers and subscriptions synced with ActiveCampaign",
+        "type": "ACTION2"
+      },
+      "id": "overview",
+      "isCardDone": "true"
+    }
+  ],
+  "syncErrors": [
+    {
+      "card": {
+        "buttons": [
+          {
+            "display": "Download CSV",
+            "icon": "CLOUD_DOWNLOAD",
+            "id": "download",
+            "type": "DIRECT_LINK",
+            "url": "https://cb-xero-migration-dev.s3.amazonaws.com/ipaas/ipaas-test/15ojLXRR18omY1M/activecampaign_ipaas-test_20-May-2019%2018%3A57.csv?response-content-disposition=attachment%3Bfilename%3Dactivecampaign_ipaas-test_20-May-2019%2018%3A57.csv&X-Amz-Security-Token=AgoJb3JpZ2luX2VjEG4aCXVzLWVhc3QtMSJHMEUCIQDo9PTk2KrsFlnYfmQnuwpurzhuRIVn4hxKE9LT8xCZ%2BAIgApHp%2Bai0Ni%2Fu8wET%2F5H%2FSceStRLDxFNvMy02sAAFAOsq2gMIdhAAGgw4MTcxODIyNDMzMjEiDOtMOSldRewVxAE6Lyq3A2Sfjm8JvjZzQ2DFcLwu%2FVSur5dYRoLS7YLS0h6xCe4tKKihS%2FfOU8MqVTUg61WA9%2Fu7fLTjdfxLrvconpIKEdbA37boejCwYi6y6%2ByKuCCXXc6Zclhr0ndb2mX49pSXh7gnUx%2BaZnGfOJu%2BkPreCcEehggv8p5%2F3m%2BjN4Y7dPw6kBljjFWFphath6Utca9JJpE0158Ce2%2BCj%2BpFKd4TuOZbL6dpKadtlzhNq%2FY%2BrSvWga1QUNv1wqPvF9x5Zs5J04222itajmoQUW4nL12kWycrpOIENzZd5ltbe5%2BMJA6Trah7t3c1%2BYI9gbgQUnYnovrnKoNG9hdJYQsQExJ%2FqhEQwX5cYFpz4DovyfgxYgXTL%2B9oXvbn9Fv4g9dIbbby%2FHFxOQH6LTTAAnk3PmM5Sujxo8Gs6z2MKPx%2BnrRhL1LM0AwEcGOtB%2BtOB%2BxKJ4yXjgLX0hPCiCPNMH2121nhEYC6%2BXJImwkFb6tV5%2B1BDAZ9um5E30MfQDjrZbhOpIUAu1jJxKDu07CnbGbH376TSp%2BO0tIWpchUExOGhrZTWRyUeBixdzromj%2BEDF7ieYA%2Fh7nSjPuKFjww%2BdKK5wU6tAH8%2BYX7d%2Bq9wpS0P3oNlxOwgbGbqQg1kMpGzC%2Bh3rJ2Y1XqwDC71GLcIpMTmVh%2FwZCCFs0s%2FxZz29gLY8ThaA2Ffrw9AnXxtRVYXS5O%2FP47cySPphRJmgKtICMWcPI%2FMtsTTjTLOYsjAGz6iF%2FVJ2uati8nvcrfY6dNIxSY%2FkGsj3fCcU357oAtZxk1M%2FE5BTxPQkWL6tj5f7oJUf%2FmYSJJbb13K66rb28HI2zM2J3j9iXc%2FMY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190520T132705Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=ASIA34Q63PH4QMOHUTP3%2F20190520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=739301ef8751a8f64c7b4c46efda9ce8a5d05d26707c74eaebeee0ff44d26f02"
+          },
+          {
+            "buttonLook": "EMPTY",
+            "display": "IGNORE ALL",
+            "icon": "CLOSE",
+            "id": "confirmation",
+            "popUp": {
+              "apiEndPoint": {
+                "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_all_error.json",
+                "headers": {
+                  "Elements-Formula-Instance-Id": "377696"
+                },
+                "type": "GET"
+              },
+              "cancelButton": "Dismiss",
+              "description": "Subscription data of this customer will not be synced with ActiveCampaign",
+              "submitButton": "Yes, go ahead",
+              "title": "Are you sure you want to ignore the errors?",
+              "type": "SIMPLE",
+              "usecase": "DANGER"
+            },
+            "type": "POP_UP"
+          }
+        ],
+        "heading": "2 errors found  ",
+        "id": "check3",
+        "listActionContent": [
+          {
+            "button": {
+              "display": "IGNORE",
+              "id": "ignore1",
+              "popUp": {
+                "apiEndPoint": {
+                  "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+                  "type": "GET"
+                },
+                "cancelButton": "Dismiss",
+                "description": "Once this error is ignored, this record will not be synced to ActiveCampaign.",
+                "submitButton": "Yes, go ahead",
+                "title": "Are you sure you want to ignore?",
+                "type": "SIMPLE",
+                "usecase": "DANGER"
+              },
+              "type": "POP_UP"
+            },
+            "content": "Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred"
+          },
+          {
+            "button": {
+              "display": "IGNORE",
+              "id": "ignore2",
+              "popUp": {
+                "apiEndPoint": {
+                  "apiUrl": "https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/ignore_error.json",
+                  "type": "GET"
+                },
+                "cancelButton": "Dismiss",
+                "description": "Once this error is ignored, this record will not be synced to ActiveCampaign.",
+                "submitButton": "Yes, go ahead",
+                "title": "Are you sure you want to ignore?",
+                "type": "SIMPLE",
+                "usecase": "DANGER"
+              },
+              "type": "POP_UP"
+            },
+            "content": "Invoice  <a href=\"\" target=\"blank\">in_DkmN3EYCnqoIbn</a> - An internal error occurred"
+          }
+        ],
+        "type": "ACTION3"
+      },
+      "id": "sync_errors",
+      "isCardDone": "false"
+    }
+  ],
+  "unlink": {
+    "buttonLook": "MUTTED",
+    "display": "Unlink Integration",
+    "id": "unlink",
+    "popUp": {
+      "apiEndPoint": {
+        "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/unlink",
+        "headers": {
+          "Elements-Formula-Instance-Id": "377707"
+        },
+        "input": {
+          "siteDomain": "chargebee-labs.com",
+          "type": "activecampaign"
+        },
+        "type": "GET"
+      },
+      "cancelButton": "Dismiss",
+      "description": "This will remove all the configuration details such as login authentication, configurations mapping etc. If you want to sync again, you will have to start the sync process from the beginning.",
+      "submitButton": "Unlink",
+      "title": "Do you really want to unlink the integration?",
+      "type": "SIMPLE"
+    },
+    "type": "POP_UP"
+  }
 }
