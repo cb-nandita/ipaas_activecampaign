@@ -64,7 +64,7 @@
             },
             "editConfig": {
                 "title": "Manage how Chargebee syncs data with ActiveCampaign",
-                "display": "Manage sync rules",
+                "display": "Manage sync ruleS",
                 "apiEndPoint": {
                     "type": "GET",
                     "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
