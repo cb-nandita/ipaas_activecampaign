@@ -23,7 +23,8 @@
                     "formulaSyncSetup": "25181",
                     "formulaSync": "25197",
                     "integrationMapping":"25149",
-                    "integrationSyncRun": "25291"
+                    "integrationSyncRun": "25291",
+                    "ActiveCampaignCheckListExist":"390732"
                     
                    
                 }
