@@ -29,8 +29,8 @@
                     "activeCampaignMappingSetup": "376928",
                     "activeCampaignMappingProceedSetup": "376934",
                     "activeCampaignInitialSyncRunSetup": "377075",
-                    "ActiveCampaignProcessingCardSetup": "386930"
-                    
+                    "ActiveCampaignProcessingCardSetup": "386930",
+                    "ActiveCampaignSyncRunSetup": "377696"
                    
                 }
             }
