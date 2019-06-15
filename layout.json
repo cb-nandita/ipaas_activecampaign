@@ -22,7 +22,8 @@
                     "formulaMappingProceed": "25155",
                     "formulaSyncSetup": "25181",
                     "formulaSync": "25197",
-                    "activeCampaignCreateSetup":"376560"
+                    "activeCampaignCreateSetup":"376560",
+                    "activeCampaignValidateSetup": "376850"
                     
                    
                 }
