@@ -63,7 +63,7 @@
                 "type": "GET",
                 "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "376928"
+                    "Elements-Formula-Instance-Id": "390913"
                 },
                 "input": {
                     "type": "activecampaign",
@@ -78,7 +78,7 @@
                     "type": "GET",
                     "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
                     "headers": {
-                        "Elements-Formula-Instance-Id": "376928"
+                        "Elements-Formula-Instance-Id": "390913"
                     },
                     "input": {
                         "type": "activecampaign",
@@ -95,7 +95,7 @@
                 "type": "GET",
                 "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/run",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "377075"
+                    "Elements-Formula-Instance-Id": "390914"
                 },
                 "input": {
                     "type": "activecampaign",
@@ -127,7 +127,7 @@
                 "type":"GET",
                 "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/sync/run",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "377696"
+                    "Elements-Formula-Instance-Id": "390912"
                 },
                 "input": {
                     "type": "activecampaign",
