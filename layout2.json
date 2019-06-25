@@ -9,7 +9,7 @@
                 "headers": {
                     "Elements-Formula-Instance-Id": "910"
                 },
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/init",
+                "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/init",
                 "input": {
                     "type": "activecampaign",
                     "chargebeeElement": "1017",
@@ -39,7 +39,7 @@
             "stepName": "Data Validation",
             "stepId": "step_1",
             "apiEndPoint": {
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/validate",
+                "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/validate",
                 "type": "GET",
                 "headers": {
                     "Elements-Formula-Instance-Id": "914"
@@ -60,7 +60,7 @@
             "stepId": "step_2",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/mapping",
                 "headers": {
                     "Elements-Formula-Instance-Id": "920"
                 },
@@ -75,7 +75,7 @@
                 "display": "Manage sync rules",
                 "apiEndPoint": {
                     "type": "GET",
-                    "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                    "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/mapping",
                     "headers": {
                         "Elements-Formula-Instance-Id": "920"
                     },
@@ -92,7 +92,7 @@
             "stepId": "step_3",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/run",
+                "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/initialsync/run",
                 "headers": {
                     "Elements-Formula-Instance-Id": "918"
                 },
@@ -109,7 +109,7 @@
             "stepId": "completed",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/processing-card",
+                "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/processing-card",
                 "headers": {
                     "Elements-Formula-Instance-Id": "386930"
                 },
@@ -124,7 +124,7 @@
 
              "fullSyncApiEndPoint": {
                 "type":"GET",
-                "apiUrl":"https://staging.cloud-elements.com/elements/api-v2/sync/run",
+                "apiUrl":"https://api.cloud-elements.co.uk/elements/api-v2/sync/run",
                 "headers": {
                     "Elements-Formula-Instance-Id": "915"
                 },
