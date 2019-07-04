@@ -7,30 +7,30 @@
             "apiEndPoint": {
                 "type": "GET",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "910"
+                    "Elements-Formula-Instance-Id": "938"
                 },
                 "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/init",
                 "input": {
                     "type": "activecampaign",
                     "chargebeeElement": "1017",
                     "thirdPartyElement": "1016",
-                    "formulaConnect": "911",
-                    "formulaCreate": "912",
+                    "formulaConnect": "939",
+                    "formulaCreate": "940",
                     "siteDomain": "chargebee-labs.com",
                     "formulaValidate": "851",
                     "formulaMapping": "852",
                     "formulaMappingProceed": "853",
                     "formulaSync": "854",
-                    "activeCampaignCreateSetup":"913",
-                    "activeCampaignValidateSetup": "914",
-                    "activeCampaignValidateProceedSetup": "915",
-                    "activeCampaignValidateProceedFinal": "916",
-                    "activeCampaignMappingSetup": "920",
-                    "activeCampaignMappingProceedSetup": "921",
-                    "activeCampaignInitialSyncRunSetup": "918",
-                    "ActiveCampaignProcessingCardSetup": "915",
-                    "ActiveCampaignSyncRunSetup": "919",
-                    "ActiveCampaignUnlinkSetup": "922"
+                    "activeCampaignCreateSetup":"937",
+                    "activeCampaignValidateSetup": "946",
+                    "activeCampaignValidateProceedSetup": "948",
+                    "activeCampaignValidateProceedFinal": "947",
+                    "activeCampaignMappingSetup": "942",
+                    "activeCampaignMappingProceedSetup": "943",
+                    "activeCampaignInitialSyncRunSetup": "941",
+                    "ActiveCampaignProcessingCardSetup": "944",
+                    "ActiveCampaignSyncRunSetup": "945",
+                    "ActiveCampaignUnlinkSetup": "949"
 
                 }
             }
@@ -42,7 +42,7 @@
                 "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/validate",
                 "type": "GET",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "914"
+                    "Elements-Formula-Instance-Id": "946"
                 },
                 "input": {
                     "type": "activecampaign",
@@ -62,7 +62,7 @@
                 "type": "GET",
                 "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/mapping",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "920"
+                    "Elements-Formula-Instance-Id": "942"
                 },
                 "input": {
                     "type": "activecampaign",
@@ -77,7 +77,7 @@
                     "type": "GET",
                     "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/mapping",
                     "headers": {
-                        "Elements-Formula-Instance-Id": "920"
+                        "Elements-Formula-Instance-Id": "942"
                     },
                     "input": {
                         "type": "activecampaign",
@@ -94,7 +94,7 @@
                 "type": "GET",
                 "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/initialsync/run",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "918"
+                    "Elements-Formula-Instance-Id": "941"
                 },
                 "input": {
                     "type": "activecampaign",
@@ -111,7 +111,7 @@
                 "type": "GET",
                 "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/processing-card",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "386930"
+                    "Elements-Formula-Instance-Id": "944"
                 },
                 "input": {
                     "type": "activecampaign",
@@ -126,7 +126,7 @@
                 "type":"GET",
                 "apiUrl":"https://api.cloud-elements.co.uk/elements/api-v2/sync/run",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "915"
+                    "Elements-Formula-Instance-Id": "945"
                 },
                 "input": {
                     "type": "activecampaign",
