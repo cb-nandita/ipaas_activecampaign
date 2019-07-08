@@ -16,7 +16,7 @@
                     "thirdPartyElement": "1016",
                     "formulaConnect": "939",
                     "formulaCreate": "940",
-                    "siteDomain": "chargebee-labs.com",
+                    "siteDomain": "predev3.in",
                     "formulaValidate": "851",
                     "formulaMapping": "852",
                     "formulaMappingProceed": "853",
@@ -46,7 +46,7 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com",
+                    "siteDomain": "predev3.in",
                     "retry":"false"
                 }
             },
@@ -66,7 +66,7 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com",
+                    "siteDomain": "predev3.in",
                     "op": "new"
                 }
             },
@@ -81,7 +81,7 @@
                     },
                     "input": {
                         "type": "activecampaign",
-                        "siteDomain": "chargebee-labs.com",
+                        "siteDomain": "predev3.in",
                         "op": "edit"
                     }
                 }
@@ -98,7 +98,7 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com",
+                    "siteDomain": "predev3.in",
                     "action": "default",
                     "initialSync": "true"
                 }
@@ -115,7 +115,7 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
+                    "siteDomain": "predev3.in"
 
                 }
 
@@ -130,7 +130,7 @@
                 },
                 "input": {
                     "type": "activecampaign",
-                    "siteDomain": "chargebee-labs.com"
+                    "siteDomain": "predev3.in"
                 }
              }
         }
