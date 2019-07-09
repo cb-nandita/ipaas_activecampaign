@@ -94,7 +94,7 @@
                 "type": "GET",
                 "apiUrl": "https://api.cloud-elements.co.uk/elements/api-v2/initialsync/run",
                 "headers": {
-                    "Elements-Formula-Instance-Id": "941"
+                    "Elements-Formula-Instance-Id": "950"
                 },
                 "input": {
                     "type": "activecampaign",
