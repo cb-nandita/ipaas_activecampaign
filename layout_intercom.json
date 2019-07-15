@@ -1,7 +1,6 @@
 {
     "logo":"/third_party/cn-activecampaign.png",
     "integDispName":"ActiveCampaign",
-    "integType":"API"
     "subStepList":[
         {
             "stepName":"Connect",
