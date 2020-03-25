@@ -39,7 +39,7 @@
             "stepName": "Data Validation",
             "stepId": "step_1",
             "apiEndPoint": {
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/validate",
+                "apiUrl": "https://raw.githubusercontent.com/cb-nandita/ipaas_activecampaign/master/validation_step.json",
                 "type": "GET",
                 "headers": {
                     "Elements-Formula-Instance-Id": "376850"
@@ -52,7 +52,7 @@
             },
           "backStepApiEndPoint": {
             "type":"GET",
-            "apiUrl":"https://raw.githubusercontent.com/cb-Vinothini/ipaas_local/master/connect_resp.json"
+            "apiUrl":"https://raw.githubusercontent.com/cb-nandita/ipaas_activecampaign/master/connect_resp.json"
           }
         },
         {
@@ -60,7 +60,7 @@
             "stepId": "step_2",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                "apiUrl": "https://raw.githubusercontent.com/cb-nandita/ipaas_activecampaign/master/mapping_step.json",
                 "headers": {
                     "Elements-Formula-Instance-Id": "390913"
                 },
@@ -75,7 +75,7 @@
                 "display": "Manage sync rules",
                 "apiEndPoint": {
                     "type": "GET",
-                    "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/mapping",
+                    "apiUrl": "https://raw.githubusercontent.com/cb-nandita/ipaas_activecampaign/master/edit_mapping_step.json",
                     "headers": {
                         "Elements-Formula-Instance-Id": "390913"
                     },
@@ -92,7 +92,7 @@
             "stepId": "step_3",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/initialsync/run",
+                "apiUrl": "https://raw.githubusercontent.com/cb-nandita/ipaas_activecampaign/master/edit_mapping_step.json",
                 "headers": {
                     "Elements-Formula-Instance-Id": "390914"
                 },
@@ -109,7 +109,7 @@
             "stepId": "completed",
             "apiEndPoint": {
                 "type": "GET",
-                "apiUrl": "https://staging.cloud-elements.com/elements/api-v2/processing-card",
+                "apiUrl": "https://raw.githubusercontent.com/cb-nandita/ipaas_local_pipedrive/master/complteLayout.json",
                 "headers": {
                     "Elements-Formula-Instance-Id": "386930"
                 },
